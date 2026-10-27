@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "theopengue-modelcard"
+version = "0.1.0"
+description = "汇总模型信息、评测指标与已知局限，生成结构化模型卡"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "theopengue" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://theopengue.github.io"
+Repository = "https://github.com/theopengue/modelcard"
+Issues = "https://github.com/theopengue/modelcard/issues"
+
+[project.scripts]
+modelcard = "modelcard:main"
+
+[tool.setuptools]
+py-modules = ["modelcard"]
